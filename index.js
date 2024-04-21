@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 app.use("/api", indexRouter);
 
 // Connect to MongoDB
-const uri ='mongodb+srv://bhaveshconnect38:IeKuFIjlvRBXoiww@MONGODB_URI=cluster0.odjspme.mongodb.net/?retryWrites=true&w=majority';
+const uri =`mongodb+srv://bhaveshconnect38:IeKuFIjlvRBXoiww@MONGODB_URI=cluster0.odjspme.mongodb.net/?retryWrites=true&w=majority`;
 mongoose.connect(uri)
 
 const connection = mongoose.connection;
